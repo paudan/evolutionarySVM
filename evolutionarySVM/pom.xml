@@ -47,4 +47,5 @@
       <version>1.0</version>
     </dependency>
   </dependencies>
+    <description>Experimental SVM code</description>
 </project>
