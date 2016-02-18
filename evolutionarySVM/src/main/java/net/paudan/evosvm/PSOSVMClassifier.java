@@ -31,7 +31,6 @@ class MaximizeFitnessFunction extends FitnessFunction {
                 class1.setCost(position[1]);
                 class1.setBias(position[2]);
                 class1.setEps(1e-6);
-                //class1.buildClassifier(getTrainData());
                 Evaluation eval = new Evaluation(trainData);
                 eval.crossValidateModel(class1, trainData, 2, new Random());
                 for (int i = 0; i < getTrainData().numClasses(); i++)
